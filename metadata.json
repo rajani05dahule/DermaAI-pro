@@ -1,0 +1,8 @@
+{
+  "name": "DermAI Pro - Skin Lesion Screening",
+  "description": "A professional AI-assisted skin cancer screening tool that analyzes dermatological images to classify lesions as benign or malignant and provides a detailed health report.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}

@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>DermAI Pro | Clinical AI Screening</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #2563eb;
+            --accent-teal: #14b8a6;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fcfdfe;
+            color: #1e293b;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .medical-shadow {
+            box-shadow: 0 4px 20px -2px rgba(37, 99, 235, 0.08);
+        }
+        .scan-line {
+            height: 2px;
+            background: linear-gradient(to right, transparent, #3b82f6, transparent);
+            box-shadow: 0 0 15px #3b82f6;
+            animation: scan 2s linear infinite;
+        }
+        @keyframes scan {
+            0% { top: 0%; }
+            100% { top: 100%; }
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "jspdf": "https://esm.sh/jspdf@^2.5.1"
+  }
+}
+</script>
+</head>
+<body class="overflow-x-hidden">
+    <div id="root"></div>
+</body>
+</html>
